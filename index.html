@@ -1,0 +1,435 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Segunda Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp2.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.iconos-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/-crucis-de-atlixco-atr-003.jpg','imagenes/crucis-de-atlixco-.jpg','imagenes/el-doloroso-va-crucis-de-atlixco.jpg','imagenes/Fachada.jpg','imagenes/semana_santa_entidades-movil.jpg')" >
+  <!-- Principal -->
+<div data-role="page" id="Principal" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+      <h1>Semana Santa</h1>
+      <center>
+      <img src="imagenes/semana-santa (1).jpg" width="929" height="228">
+      </center>
+   </div> 
+<div data-role="main" class="ui-content">
+   <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>Significado de Semana Santa</h2>
+     </a>
+   </li>
+   <li class="ui first-child ui-last-child">
+     <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Domingo de Pascua</h2>
+     </a> 
+   </li>
+   
+      <li class="ui first-child ui-last-child">
+     <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>¿Como se establece la semana santa?</h2>
+     </a> 
+   </li>
+   <li class="ui first-child ui-last-child">
+     <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Celebracion en Atlixco</h2>
+     </a> 
+   </li>
+   <li class="ui first-child ui-last-child">
+     <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Iztapalapa</h2>
+     </a> 
+   </li>
+   <li class="ui first-child ui-last-child">
+     <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Vaticano</h2>
+     </a> 
+   </li>
+   <li class="ui first-child ui-last-child">
+     <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Jeruzalen</h2>
+     </a> 
+   </li>
+   <li class="ui first-child ui-last-child">
+     <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>España</h2>
+     </a> 
+   </li>
+  </ul>
+</div>
+<div data-role="footer" align="center" data-theme="a">
+   <div>
+     <img src="imagenes/persona_rosa.png" width="46" height="46">
+   </div>
+   <div>
+     <h4>Aplicacion Dos</h4>
+     <h4>Dulce Vazquez Santos</h4>
+   </div>
+</div>
+</div>       
+  <!-- Principal -->
+  
+  <!-- Pag 1 -->
+  <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>¿Que es Semana Santa?</h1>
+   </div>
+  <div data-role="content" align="center">
+   <div>
+     
+       <h2>
+       Semana Santa, conocida como semana mayor, es un período de 7 días que comienza con el domingo de Ramos y culmina con el Domingo de Resurrección. Con la Semana Santa, el cristiano conmemora el Triduo Pascual, es decir, los momentos de la Pasión, la Muerte y la Resurrección de Jesucristo.La Semana Santa está precedida por la Cuaresma que se refiere al tiempo de preparación donde se recuerda los 40 días de Jesucristo en el desierto. Las celebraciones centrales de la Semana Santa son: Jueves Santo, Viernes Santo, Sábado Santo y Domingo de Resurrección.
+La Semana Santa fue la última semana de Cristo en la tierra. Su Resurrección nos recuerda que los hombres fuimos creados para vivir eternamente junto a Dios.</h2>
+   </div>
+   
+   <div data-role="collapsible" data-content-theme="false">
+         <h1>Mas Informacion:</h1>
+          <div>
+          <p>La Semana Santa es la conmemoración anual cristiana de la Pasión, Muerte y Resurrección de Jesús de Nazaret. Por eso, es un período de intensa actividad litúrgica dentro de las diversas confesiones cristianas. Da comienzo el Domingo de Ramos y finaliza el Domingo de Resurrección,1 aunque su celebración suele iniciarse en varios lugares el viernes anterior (Viernes de Dolores) y se considera parte de la misma el Domingo de Resurrección. La fecha de la celebración es variable (entre marzo y abril según el año) ya que depende del calendario lunar. La Semana Santa va precedida por la Cuaresma, que finaliza en la Semana de Pasióndonde se celebra la eucaristía en el Jueves Santo, se conmemora la Crucifixión de Jesús el Viernes Santo y la Resurrección en la Vigilia Pascual durante la noche del Sábado Santo al Domingo de Resurrección
+           
+          </p>
+     </div>
+      <div>
+      <center>
+        <p><img src="imagenes/1422342_10_635001659425010113.jpg" width="261" height="190"></p></center>
+        <p>&nbsp;</p>
+      </div>
+  </div>
+   </div>
+  <div data-role="footer" data-theme="a">
+    <h4>Vazquez Santos Dulce</h4>
+  </div>
+</div>
+
+  <!-- Pag 1 -->
+  <!-- Pag 2 -->
+  <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Domingo de Pascua</h1>
+   </div>
+   <div data-role="content" align="center">
+    <div>
+      <h2>Domingo de Resurrección
+La Resurrección es fuente de profunda alegría. A partir de ella, los cristianos no podemos vivir más con caras tristes. Contempla los lugares donde Cristo se apareció después de Su Resurrección 
+
+¿Cómo se celebra el Domingo de Pascua? 
+
+Se celebra con una Misa solemne en la cual se enciende el cirio pascual, que simboliza a Cristo resucitado, luz de todas las gentes.
+En algunos lugares, muy de mañana, se lleva a cabo una procesión que se llama “del encuentro”. En ésta, un grupo de personas llevan la imagen de la Virgen y se encuentran con otro grupo de personas que llevan la imagen de Jesús resucitado, como símbolo de la alegría de ver vivo al Señor.
+   </h2>
+    </div>
+  
+    
+    <div data-role="collapsible" data-content-theme="false">
+         <h1>Mas Informacion:</h1>
+          <div>
+          <p>El Domingo de Pascua es una celebración que no se fija en relación al calendario civil. El Primer Concilio de Nicea (año 325) estableció la fecha de la Pascua como el primer domingo después de la luna llena tras el equinoccio de primavera en el hemisferio norte.
+Qué se celebra el domingo de Pascua
+El fin de semana largo de Semana Santa es conocido por todos los que pueden gozarlo como días festivos y en la mayoría de los casos, no trabajar. Pero, ¿qué se celebra en Pascua?
+Se trata de la fiesta central del cristianismo, en la que se conmemora, de acuerdo con los evangelios canónicos, la resurrección de Jesús al tercer día después de haber sido crucificado.</p>
+     </div>
+      <div>
+      <center>
+        <p><img src="imagenes/anastasis_resurreccion.jpg" width="261" height="190"></p>
+        </center>
+        <p>&nbsp;</p>
+      </div>
+  </div>
+     
+       <div data-role="collapsible" data-content-theme="false">
+         <h1>Mas Informacion:</h1>
+          <div>
+          <p>La Pascua marca el final de la Semana Santa, en la que se conmemora la crucifixión y muerte de Jesús. A la Semana Santa le sigue un período de cincuenta días llamado Tiempo pascual, que termina con el Domingo de Pentecostés.
+En algunos países, se acostumbra celebrar la alegría de la Resurrección escondiendo dulces en los jardines para que los niños pequeños los encuentren, con base en la leyenda del “conejo de pascua”.
+
+La costumbre más extendida alrededor del mundo, para celebrar la Pascua, es la regalar huevos de dulce o chocolate a los niños y a los amigos.
+
+A veces, ambas tradiciones se combinan y así, el buscar los huevitos escondidos simboliza la búsqueda de todo cristiano de Cristo resucitado.</p>
+     </div>
+      <div>
+       <center>
+
+        <p><img src="imagenes/descarga.jpg" width="261" height="190"></p>
+        </center>
+        <p>&nbsp;</p>
+      </div>
+  </div>
+  
+   <div data-role="collapsible" data-content-theme="false">
+         <h1>Mas Informacion:</h1>
+          <div>
+          <p>El domingo de Pascua los creyentes celebran la resurrección con ceremonias de luz y alegría, ya que el misterio de la fe cristiana se manifiesta. Por ello hay procesiones religiosas y celebraciones litúrgicas.
+
+La tradición de los “huevos de Pascua”
+El origen de esta costumbre viene de los antiguos egipcios, quienes acostumbraban regalarse en ocasiones especiales, huevos decorados por ellos mismos. Los decoraban con pinturas que sacaban de las plantas y el mejor regalo era el huevo que estuviera mejor pintado. Ellos los ponían como adornos en sus casas</p>
+     </div>
+      <div>
+      <center>
+        <p><img src="imagenes/images (2).jpg" width="261" height="190"></p>
+        </center>
+        <p>&nbsp;</p>
+      </div>
+  </div>
+     </div>
+    <div data-role="footer" data-theme="a">
+      <h4>Vazquez Santos Dulce</h4>
+    </div>
+</div>
+  <!-- Pag 2 -->
+  
+  <!-- Pag 3 -->
+  <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>¿Como se establece la Semana Santa?</h1>
+  </div>
+<div data-role="content" align="center">
+   
+      <div>La Pascua de Resurrección es el domingo inmediatamente posterior a la primera Luna llena tras el equinoccio de primavera, y se debe calcular empleando la Luna llena eclesiástica; sin embargo, ésta casi siempre coincide con la Luna llena astronómica, de modo que para efectos de cálculo es generalmente válido emplear la más tradicional definición astronómica. Por ello puede ser tan temprano como el 22 de marzo, o tan tarde como el 25 de abril. 
+        
+        La fecha del carnaval tiene una relación directa con la fecha de la Semana Santa. Martes de Carnaval es el día anterior a Miércoles de ceniza y el sábado de carnaval que es cuando se celebra en la mayoría de las ciudades es el sábado anterior al Miércoles de ceniza. Miércoles de ceniza es el día de comienzo de la Cuaresma y es 40 días antes que el Domingo de Ramos que es el domingo anterior al Domingo de Resurrección (Semana santa).sus casas. </div>
+      
+    
+      <div>
+      <center>
+      <img src="imagenes/cruzificado.jpg" width="340" height="258">
+      </center>
+      <h2>&nbsp;</h2>
+      </div>
+  </div>  
+<div data-role="footer" data-theme="a">
+     <h4>Vazquez Santos Dulce</h4>
+   </div>
+  </div>
+
+  <!-- Pag 3 -->
+  <!--pag 4-->
+  <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"  data-back-btn-theme="b">
+    <h1>Celebracion en Atlixco</h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <h2>El Vía Crucis de Atlixco, en el estado mexicano de Puebla, reúne desde hace más de un siglo en Semana Santa a un grupo de penitentes capaces de traspasar el umbral del dolor por su devoción, al salir en procesión encapuchados y descalzos, con grilletes y coronas de espinas.
+      </h2>
+      </div>
+     
+      <center>
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image17','','imagenes/-crucis-de-atlixco-atr-003.jpg',1)"><img src="imagenes/jesus.jpg" alt="" width="300" height="168" id="Image17"></a>
+      
+      </center>
+    
+<div data-role="collapsible" data-content-theme="false">
+         <h1>Mas Informacion:</h1>
+          <div>
+          <p>Vía Crucis de  Atlixco, en el estado mexicano de Puebla, reúne desde hace más de un siglo en  Semana Santa a un grupo de penitentes capaces de traspasar el umbral del dolor  por su devoción, al salir en procesión encapuchados y descalzos, con grilletes  y coronas de espinas.<br>
+Atlixco,  un municipio situado a 30 minutos de Puebla capital y que fue nombrado  recientemente Pueblo Mágico, acogió hoy la llamada procesión de los  Engrillados, que se celebra cada Viernes Santo en medio de gran expectación.</p>
+     </div>
+      <div>
+         <center>
+           <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','imagenes/crucis-de-atlixco-.jpg',1)"><img src="imagenes/jesus.jpg" alt="" width="300" height="168" id="Image18"></a>
+        </center>    
+        <p>&nbsp;</p>
+      </div>
+  </div>
+       
+<div data-role="collapsible" data-content-theme="false">
+         <h1>Mas Informacion:</h1>
+          <div>
+          <p>&quot;Es  la fe, la devoción que tenemos para salir y para que este año nos vaya bien a  nosotros y a la familia, una obra de agradecimiento&quot;, describe un  engrillado a Efe los motivos que le llevan a salir cada año en la procesión.<br>
+Bajo el  anonimato el devoto confiesa que lleva un lustro participando y que lo hace con  orgullo por todos los favores que el Señor le ha dado.<br>
+En otros  casos se agradece la cura de algún familiar que padecía una grave enfermedad.</p>
+&quot;Mi papá tuvo  una operación y el doctor dijo que, una de dos, o se iba o se quedaba, y vine a  prometer que iba a salir tres años de engrillado&quot;, comenta otro  participante que también prefiere reservar su identidad
+
+      </div>
+      <div>
+         <center>
+           <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','imagenes/el-doloroso-va-crucis-de-atlixco.jpg',1)"><img src="imagenes/jesus.jpg" alt="" width="300" height="168" id="Image19"></a>
+        </center>    
+        <p>&nbsp;</p>
+      </div>
+  </div>
+       
+<div data-role="collapsible" data-content-theme="false">
+         <h1>Mas Informacion:</h1>
+          <div>
+          <p>"Es la fe, la devoción que tenemos para salir y para que este año nos vaya bien a nosotros y a la familia, una obra de agradecimiento", describe un engrillado a Efe los motivos que le llevan a salir cada año en la procesión.
+     Bajo el anonimato el devoto confiesa que lleva un lustro participando y que lo hace con orgullo por todos los favores que el Señor le ha dado.
+     En otros casos se agradece la cura de algún familiar que padecía una grave enfermedad.
+     
+  "Mi papá tuvo una operación y el doctor dijo que, una de dos, o se iba o se quedaba, y vine a prometer que iba a salir tres años de engrillado", comenta otro participante que también prefiere reservar su identidad 
+"Es la fe, la devoción que tenemos para salir y para que este año nos vaya bien a nosotros y a la familia, una obra de agradecimiento", describe un engrillado a Efe los motivos que le llevan a salir cada año en la procesión. Bajo el anonimato el devoto confiesa que lleva un lustro participando y que lo hace con orgullo por todos los favores que el Señor le ha dado. En otros casos se agradece la cura de algún familiar que padecía una grave enfermedad. "Mi papá tuvo una operación y el doctor dijo que, una de dos, o se iba o se quedaba, y vine a prometer que iba a salir tres años de engrillado", comenta otro participante que también prefiere reservar su identidad</p>
+     </div>
+      <div>
+         <center>
+           <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image20','','imagenes/Fachada.jpg',1)"><img src="imagenes/jesus.jpg" alt="" width="300" height="168" id="Image20"></a>
+        </center>    
+        <p>&nbsp;</p>
+      </div>
+  </div>
+       
+<div data-role="collapsible" data-content-theme="false">
+         <h1>Mas Informacion:</h1>
+          <div>
+          <p>Espiritualmente reciben preparación a través de encuentros, pláticas y lecturas de la Sagrada Escritura.
+Sin embargo, no todos aguantan este sacrificio. "He visto a compañeros que se desmayan, les tienen que quitar las cadenas porque no aguantan, voluntarios de la Cruz Roja se los tienen que llevar", relata otro engrillado.
+"La preparación es más que nada espiritual; se necesita tener mucha fe, es algo que no se puede describir; es dolor, cansancio, pero no se compara lo que sufrimos nosotros a lo que sufrió Jesús", señala el joven.
+Arrastran pesadas cadenas, que a veces superan los 100 kilos, con la cara tapada y una corona de espinas.
+En el pecho, los brazos, las piernas y en la espalda se clavan más espinas que una semana antes van a buscar descalzos a un cerro cercano, señala administradora del Exconvento de San Francisco, Judith Sánchez del Razo.
+En sus manos cargan una bandeja con limones, lo único que toman durante todo el recorrido para evitar la deshidratación.
+Caminan bajo la atenta mirada de fieles y miles de visitantes de diferentes partes de México. </p>
+     </div>
+      <div>
+         <center>
+           <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21','','imagenes/semana_santa_entidades-movil.jpg',1)"><img src="imagenes/jesus.jpg" alt="" width="300" height="168" id="Image21"></a>
+        </center>    
+        <p>&nbsp;</p>
+      </div>
+  </div>
+     </div>
+<div data-role="footer" data-theme="a">
+    <h4>Vazquez Santos Dulce</h4>
+  </div>
+</div>      
+  
+  <!--pag 4-->
+  <!--pag 5-->
+   <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Iztapalapa</h1>
+  </div>
+   <div data-role="content" align="center">
+     <div>
+         <h2>Iztapalapa</h2>
+       <p>Para los iztapalapences, y para los no tanto,  Semana Santa es una de las fechas más importantes en la que los noticieros chonchos recorren las calles sin miedo, dicen mil y un maravillas de Iztapalapa; los  helicópteros  sobre vuelan los ocho barrios muy al pendiente de lo que pasa (lástima que no estén así los otros 359 días); los turistas se dan cita a pesar de ser un lugar peligroso, y otros chilangos ven todo con mucho folklor. Pero, sobre todo, lo que más abunda en estos días es la hipocresía.
+         </p>
+      
+       </div>
+        <div>
+         <center>
+       <img src="imagenes/jesus.jpg" width="299" height="168" id="Image16">
+        </center>
+     </div>
+  </div>
+   <div data-role="footer" data-theme="a">
+      <h4>Vazquez Santos Dulce</h4>     
+   </div>   
+</div>
+  <!--pag5-->
+  <!-- pag 6 -->
+   <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a"><div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>VATICANO</h1>
+   </div>
+   <div data-role="content" align="center">
+     <div>
+       <h2>¿CÓMO SE CELEBRA LA SEMANA SANTA EN ROMA?</h2>
+       <p>
+La Semana Santa en Roma comienza el Domingo de Ramos cuando el Papa ofrece la “Misa de bendición” en la Plaza San Pedro a las 9:30 de la mañana. Como es ya tradición, al terminar la misa el papa recita un mensaje especial a los jóvenes del mundo: el “Angelus”.
+El Lunes Santo y el Jueves Santo el Papa vuelve a ofrecer misa. La de la mañana, conocida como “La Misa del Crisma” y en la que el papa bendice el Olio Santo (crisma) que sirve para uno de los sacramentos de la Iglesia Católica. El significado de esta misa es la unión de la Iglesia Católica como un único cuerpo y sentir alrededor del mundo.
+El Viernes Santo no se celebran misas hasta la Vigilia Pascual, aunque en la Basílica de San Pedro, y en las principales Iglesias de Roma podemos encontrar distintos coros cantando. Por la noche se realiza una de las procesiones más solemnes y hermosas : el “Via Crucis” guiado por el Papa, donde se reconstruye y conmemora el camino doloroso de Jesús hasta su crucifixión, que parte del interior del Coliseo y termina en las Colinas del Palatino.
+         
+       </p>
+     </div>
+     <div>
+     <center>
+      <img src="imagenes/jesus.jpg" width="299" height="168" id="Image16">
+     </center>
+  </div>
+  </div>
+   <div data-role="footer" data-theme="a">
+      <h4>Vazquez Santos Dulce</h4>     
+   </div>   
+</div>
+
+  <!-- pag 6 -->
+  <!-- pag 7 -->
+   <div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>JERUZALÉN</h1>
+  </div>
+   <div data-role="content" align="center">
+     <div>
+       <p>El periodo de la Cuaresma está llegando a su fin y tanto los cristianos locales como los miles de peregrinos que han acudido a la Ciudad Santa se están preparando para celebrar Semana Santa y su culminación en el Domingo de Resurrección, la fecha de mayor importancia del año litúrgico cristiano.
+No hay nada como vivir la Semana Santa en Jerusalén.  Celebrar los grandes eventos de la historia de salvación y de la vida de Jesús en los mismos lugares en los que ocurrieron es una experiencia de fe conmovedora e inolvidable para todos los creyentes.
+Oficialmente, Semana Santa comienza al conmemorarse la entrada de Jesús en Jerusalén el Domingo de Ramos (1 de abril), con la misa matinal de las 8 en la Iglesia del Santo Sepulcro y la tradicional procesión de Palmas durante la tarde. Más tarde, a las 14.30, miles de cristianos de todo el mundo marcharán jubilosamente desde Betfagé, rezando y cantando en todos los idiomas, descendiendo por la ladera occidental del Monte de los Olivos en camino a la Ciudad Vieja, a través del valle de Kidrón.
+El Jueves Santo, el Patriarca Latino de Jerusalén celebrará a las 8 de la mañana la Institución de la Eucaristía en el Santo Sepulcro y por la tarde, a las 15.30, los Franciscanos efectuarán su peregrinación tradicional al Cenáculo (la Sala Superior) en el Monte Sion. Por la noche, a partir de las 21 horas, peregrinos y cristianos locales velarán con Jesucristo durante una hora sagrada de meditación en el Huerto de Getsemaní, seguida de una procesión a la luz de velas a la iglesia de San Pedro en Gallicantu, que según la tradición es el lugar en el que Jesús pasó la noche después de ser arrestado.
+En Viernes Santo, a las 8 de la mañana, se conmemorarán la Pasión del Señor y la crucifixión en el Calvario, seguidas del Vía Crucis en la Vía Dolorosa a las 11.30, liderado por el Custos (Custodio) franciscano de Tierra Santa.  Posteriormente, a las 8.10 de la mañana, se celebrará el funeral de Cristo en el Sepulcro, un evento exclusivo de la Iglesia de Jerusalén, que reconstruye la deposición del cuerpo de Cristo en la tumba. 
+</p>
+</div>
+<div>
+   <center>
+    <img src="imagenes/jesus.jpg" width="299" height="168" id="Image16">
+    </center>
+     </div>
+  </div>
+   <div data-role="footer" data-theme="a">
+      <h4>Vazquez Santos Dulce</h4>     
+   </div>   
+</div>
+
+  <!-- pag 7-->
+  <!-- pag 8 -->
+  <div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>ESPAÑA</h1>
+  </div>
+   <div data-role="content" align="center">
+     <div>
+       <h2>Semana Santa en Madrid</h2>
+       <p>
+Madrid conmemora intensamente la pasión y muerte de Jesucristo, no sólo en la exaltación de su devoción, sino en la celebración de otros actos culturales paralelos. Mientras iglesias y basílicas programan conciertos de música sacra, las distintas cofradías salen a la calle con los pasos que llevan preparando durante todo el año y los mejores restaurantes y pastelerías de la ciudad añaden a sus cartas platos típicos de Semana Santa con un toque castizo.
+
+De Domingo de Ramos al Domingo de Resurrección, miles de personas se acercan a la ciudad para presenciar las diferentes procesiones que recorren las calles de Madrid y disfrutar del ambiente creado con el redoblar de los tambores y las trompetas, y la vistosidad que ofrecen cientos de cofrades con sus coloridos trajes. Todo ello forma parte de la celebración que representa los misterios de la salvación de Jesús de Nazaret.
+Madrid conmemora intensamente la pasión y muerte de Jesucristo, no sólo en la exaltación de su devoción, sino en la celebración de otros actos culturales paralelos. 
+</p>
+
+</div>
+<div>
+<center>
+  <img src="imagenes/jesus.jpg" width="299" height="168" id="Image16">
+  </center>
+</div>
+</div>
+   <div data-role="footer" data-theme="a">
+      <h4>Vazquez Santos Dulce</h4>     
+   </div>   
+</div>
+  
+  
+  <!-- pag 8 -->
+</body>
+</html>
